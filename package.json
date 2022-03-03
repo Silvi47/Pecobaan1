@@ -2,9 +2,14 @@
   "name": "app-satu",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Silvia47/Pecobaan1.git"
   },
   "babel": {
     "presets": [
