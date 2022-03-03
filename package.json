@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack build -output public",
+    "build": "webpack build --output public",
     "start": "webpack serve"
   },
   "repository": {
