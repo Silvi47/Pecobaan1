@@ -2,10 +2,9 @@
   "name": "app-satu",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "webpack build --output"
+    "build": "webpack build -output public"
   },
   "repository": {
     "type": "git",
