@@ -46,7 +46,7 @@ class Popular extends React.Component {
         return (
             <React.Fragment>
                 <LanguageNav
-                    selected={selectedLanguage}
+                    selected={true}
                     onUpdateLanguage={this.updateLanguage}
                 />
             </React.Fragment>
