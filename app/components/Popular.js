@@ -30,7 +30,7 @@ class Popular extends React.Component {
         super(props)
 
         this.state = {
-            selectedLanguage: 'All'
+            selectedLanguage: 'All',
             repos: null,
             error: null
         }
