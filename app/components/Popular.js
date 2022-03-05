@@ -68,15 +68,7 @@ class Popular extends React.Component {
                         error: 'There was an error fetching the repositories.'
                     })
                 })
-
-            fetchPopularRepos(selectedLanguage)
-            .then((repos) => this.setState({
-                repos,
-                error: null,
-            }))
-            
         }
-        
     }
 
     isLoading() {
