@@ -85,6 +85,7 @@ class Popular extends React.Component {
             </React.Fragment>
         )
     }
+}
         
         /*const languages = ["All", "JavaScript", "Ruby", "Java", "CSS", "Python"]
 
@@ -101,7 +102,6 @@ class Popular extends React.Component {
                 ))}
             </ul>
         )*/
-    }
-}
+
 
 export default Popular;
