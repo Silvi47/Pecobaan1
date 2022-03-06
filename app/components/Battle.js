@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from "react";
 import { FaUserFriends, FaFighterJet, FaTrophy } from 'react-icons/fa'
 
@@ -73,6 +74,11 @@ class PlayerInput extends React.Component {
       </form>
     )
   }
+}
+
+PlayerInput.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired
 }
 
 class Battle extends React.Component {
