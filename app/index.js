@@ -24,8 +24,8 @@ class App extends React.Component {
                 </li>
               </ul>
                 <Routes>
-                    <Route exact path="/" element={<Battle />} />
-                    <Route path="/popular" element={<Popular />}/>
+                    <Route exact path="/" element={<div className='container'><Battle /></div>} />
+                    <Route path="/popular" element={<div className='container'><Popular /></div>}/>
                 </Routes>
             </div>
       </Router>
