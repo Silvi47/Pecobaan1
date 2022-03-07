@@ -146,7 +146,7 @@ class Battle extends React.Component {
         }
 
         return (
-          <React.Fragment>
+          <React.Fragment className="container">
             <Instructions />
 
             <div className="player-container">
