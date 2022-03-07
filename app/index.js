@@ -3,13 +3,32 @@ import ReactDOM from 'react-dom'
 import Popular from './components/Popular'
 import './index.css'
 import Battle from './components/Battle'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 class App extends React.Component {
   render() {
     return (
-      <div className='container'>
-        <Battle />
-      </div>
+      <Router>
+            <div>
+              <ul className="flex-center">
+                <li>
+                  <Link to="/" className='nav-link btn-hover'>Battle</Link>
+                </li>
+                <li>
+                  <Link to="/popular" className='nav-link btn-hover'>Popular</Link>
+                </li>
+              </ul>
+                <Routes>
+                    <Route exact path="/" element={<Battle />} />
+                    <Route path="/popular" element={<Popular />}/>
+                </Routes>
+            </div>
+      </Router>
     )
   }
 }
