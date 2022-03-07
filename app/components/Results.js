@@ -103,11 +103,6 @@ export default class Results extends React.Component {
             <ProfileList profile={loser.profile}/>
           </Card>
         </div>
-        <button
-          onClick={this.props.onReset}
-          className='btn dark-btn btn-space'>
-            Reset
-        </button>
       </React.Fragment>
     )
   }
