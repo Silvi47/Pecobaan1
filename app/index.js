@@ -34,10 +34,10 @@ class App extends React.Component {
             <div>
               <ul className="flex-center">
                 <li>
-                  <Link to="/" className={`nav-link btn-hover ${this.state.theme}`}>Battle</Link>
+                  <Link to="/" className={`btn-clear nav-link ${this.state.theme}`}>Battle</Link>
                 </li>
                 <li>
-                  <Link to="/popular" className={`nav-link btn-hover ${this.state.theme}`}>Popular</Link>
+                  <Link to="/popular" className={`btn-clear nav-link ${this.state.theme}`}>Popular</Link>
                 </li>
                 <li>
                   <Nav />
