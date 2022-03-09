@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Popular from './components/Popular'
 import './index.css'
+import Popular from './components/Popular'
 import Battle from './components/Battle'
+import { ThemeProvider } from './contexts/theme'
+import Nav from './components/Nav'
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,23 +13,43 @@ import {
 } from "react-router-dom";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      theme: 'light',
+      toggleTheme: () => {
+        this.setState(({ theme }) => ({
+          theme: theme === 'light' ? 'dark' : 'light'
+        }))
+      }
+    }
+  }
+
   render() {
     return (
       <Router>
-            <div>
-              <ul className="flex-center">
+        <ThemeProvider value={this.state}>
+          <div className={this.state.theme}>
+            <div className="flex-center">
+              <ul>
                 <li>
-                  <Link to="/" className='nav-link btn-hover'>Battle</Link>
+                  <Link to="/" className={`nav-link btn-hover ${this.state.theme}`}>Battle</Link>
                 </li>
                 <li>
-                  <Link to="/popular" className='nav-link btn-hover'>Popular</Link>
+                  <Link to="/popular" className={`nav-link btn-hover ${this.state.theme}`}>Popular</Link>
+                </li>
+                <li>
+                  <Nav />
                 </li>
               </ul>
                 <Routes>
                     <Route exact path="/" element={<div className='container'><Battle /></div>} />
-                    <Route path="/popular" element={<div className='container'><Popular /></div>}/>
+                    <Route exact path="/popular" element={<div className='container'><Popular /></div>}/>
                 </Routes>
             </div>
+          </div>
+        </ThemeProvider>
       </Router>
     )
   }
