@@ -10,7 +10,7 @@ function Nav () {
                         className="btn-clear nav-link"
                         onClick={toggleTheme}
                     >
-                        {theme === 'light' ? 'Dark Theme' : <div style={{color: "white"}}>Light Theme</div>}
+                        {theme === 'light' ? 'Dark Theme' : <div style={{color: "#DADADA"}}>Light Theme</div>}
                     </button>
                 </nav>
             )}
