@@ -31,8 +31,8 @@ class App extends React.Component {
       <Router>
         <ThemeProvider value={this.state}>
           <div className={this.state.theme}>
-            <div className="flex-center">
-              <ul>
+            <div>
+              <ul className="flex-center">
                 <li>
                   <Link to="/" className={`nav-link btn-hover ${this.state.theme}`}>Battle</Link>
                 </li>
