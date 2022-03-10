@@ -1,11 +1,17 @@
 import React from "react";
 import { ThemeConsumer  } from "../contexts/theme";
-import { Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function Nav () {
     return (
         <ThemeConsumer>
             {({ theme, toggleTheme }) => (
+              <Router>
                 <nav className="row space-between flex-center">
                     <ul>
                         <li>
@@ -21,7 +27,12 @@ function Nav () {
                     >
                         {theme === 'light' ? 'Dark Theme' : <div style={{color: "#DADADA"}}>Light Theme</div>}
                     </button>
+                    <Routes>
+                    <Route exact path="/" element={<div className='container'><Battle /></div>} />
+                    <Route exact path="/popular" element={<div className='container'><Popular /></div>}/>
+                    </Routes>
                 </nav>
+              </Router>
             )}
         </ThemeConsumer>
     )
