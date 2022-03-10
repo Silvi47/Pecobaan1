@@ -238,7 +238,7 @@ li {
 .btn-space {
   border: none;
   background: transparent;
-  padding: 5px;
+  padding: 5px 8px;
   cursor: pointer;
 }
 
