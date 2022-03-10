@@ -14,7 +14,7 @@ function Nav () {
         <nav className='row space-between flex-center'>
           <ul className='row nav'>
             <li>
-              <NavLink to='/' exact="true" style={isActive => ({color: isActive ? "rgb(187, 46, 31)" : "black"})} className='nav-link'>
+              <NavLink to='/' style={isActive => ({color: isActive ? "rgb(187, 46, 31)" : "black"})} className='nav-link'>
                   Popular
               </NavLink>
             </li>
