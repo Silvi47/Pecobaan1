@@ -9,7 +9,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 class App extends React.Component {
@@ -28,13 +27,18 @@ class App extends React.Component {
 
   render() {
     return (
+        <Router>
         <ThemeProvider value={this.state}>
           <div className={this.state.theme}>
-            <div>
-                <Nav />
+            <div className='container'>
+              <Nav />
+
+              <Route exact path='/' component={Popular} />
+              <Route path='/battle' component={Battle} />
             </div>
           </div>
         </ThemeProvider>
+      </Router>
     )
   }
 }
