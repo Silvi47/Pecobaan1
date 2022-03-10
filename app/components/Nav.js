@@ -9,12 +9,12 @@ function Nav () {
         <nav className='row space-between flex-center'>
           <ul className='row nav'>
             <li>
-              <Link to='/' className={`nav-link btn-space ${this.state.theme}`}>
+              <Link to='/' activeStyle={activeStyle} className='nav-link btn-space'>
                   Popular
               </Link>
             </li>
             <li>
-              <Link to='/battle' className={`nav-link btn-space ${this.state.theme}`}>
+              <Link to='/battle' className='nav-link btn-space'>
                   Battle
               </Link>
             </li>
