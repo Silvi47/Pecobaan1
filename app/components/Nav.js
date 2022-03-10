@@ -6,13 +6,13 @@ function Nav () {
     return (
         <ThemeConsumer>
             {({ theme, toggleTheme }) => (
-                <nav className="row space-between">
+                <nav className="row space-between flex-center">
                     <ul>
                         <li>
-                            <Link to="/" className="nav-link btn-hover">Popular</Link>
+                            <Link to="/" className={`nav-link btn-hover ${this.state.theme}`}>Popular</Link>
                         </li>
                         <li>
-                            <Link to="/battle" className="nav-link btn-hover">Battle</Link>
+                            <Link to="/battle" className={`nav-link btn-hover ${this.state.theme}`}>Battle</Link>
                         </li>
                     </ul>
                     <button
