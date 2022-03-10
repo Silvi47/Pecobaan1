@@ -34,7 +34,7 @@ class App extends React.Component {
               <Nav />
               <Routes>
                 <Route exact path="/" element={<Popular />} />
-                <Route exact path="/battle" element={<Battle />}/>
+                <Route path="/battle" element={<Battle />}/>
               </Routes>
             </div>
           </div>
