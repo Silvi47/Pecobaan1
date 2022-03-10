@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeConsumer  } from "../contexts/theme";
 import { Link } from "react-router-dom";
+import './index.css'
 
 function Nav () {
     return (
@@ -10,12 +11,12 @@ function Nav () {
           <ul className='row nav'>
             <li>
               <Link to='/' className='nav-link btn-space' onClick={toggleTheme}>
-                  {theme === 'light' ? <p>Popular</p> : <p style="color: #DADADA;">Battle</p>}
+                  {theme === 'light' ? <p>Popular</p> : <p style={color: '#DADADA'}>Popular</p>}
               </Link>
             </li>
             <li>
-              <Link to='/popular' className='nav-link btn-space' onClick={toggleTheme}>
-                  {theme === 'light' ? <p>Popular</p> : <p style="color: #DADADA;">Popular</p>}
+              <Link to='/battle' className='nav-link btn-space' onClick={toggleTheme}>
+                  {theme === 'light' ? <p>Battle</p> : <p style={color: '#DADADA'}>Battle</p>}
               </Link>
             </li>
           </ul>
