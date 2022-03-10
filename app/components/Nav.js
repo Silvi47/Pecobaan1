@@ -12,7 +12,6 @@ function Nav () {
               <NavLink
                 to='/'
                 exact
-                activeStyle={activeStyle}
                 className='nav-link'>
                   Popular
               </NavLink>
@@ -20,7 +19,6 @@ function Nav () {
             <li>
               <NavLink
                 to='/battle'
-                activeStyle={activeStyle}
                 className='nav-link'>
                   Battle
               </NavLink>
