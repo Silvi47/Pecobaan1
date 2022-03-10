@@ -19,7 +19,7 @@ function Nav () {
               </NavLink>
             </li>
             <li>
-              <NavLink to='battle/*' style={isActive => ({color: isActive ? "rgb(187, 46, 31)" : "black"})} className='nav-link'>
+              <NavLink to='/battle' style={isActive => ({color: isActive ? "rgb(187, 46, 31)" : "black"})} className='nav-link'>
                   Battle
               </NavLink>
             </li>
