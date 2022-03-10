@@ -16,12 +16,12 @@ function Nav () {
             <li>
               <NavLink to='/' exact activeStyle={activeStyle} className='nav-link'>
                   Popular
-              </Link>
+              </NavLink>
             </li>
             <li>
               <NavLink to='/battle' activeStyle={activeStyle} className='nav-link'>
                   Battle
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <button
