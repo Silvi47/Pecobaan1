@@ -14,12 +14,12 @@ function Nav () {
         <nav className='row space-between flex-center'>
           <ul className='row nav'>
             <li>
-              <NavLink to='/' exact style={isActive => ({color: isActive ? "rgb(187, 46, 31)" : "black"})} className='nav-link'>
+              <NavLink to='/' exact="true" style={isActive => ({color: isActive ? "rgb(187, 46, 31)" : "black"})} className='nav-link'>
                   Popular
               </NavLink>
             </li>
             <li>
-              <NavLink to='/battle' exact style={isActive => ({color: isActive ? "black" : "rgb(187, 46, 31)"})} className='nav-link'>
+              <NavLink to='/battle' style={isActive => ({color: isActive ? "rgb(187, 46, 31)" : "black"})} className='nav-link'>
                   Battle
               </NavLink>
             </li>
