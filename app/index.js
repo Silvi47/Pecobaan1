@@ -35,8 +35,8 @@ class App extends React.Component {
               <Nav />
               <Routes>
                 <Route exact path="/" element={<Popular />} />
-                <Route exact path="battle/*" element={<Battle />}/>
-                <Route path="battle/results/*" element={<Results />}/>
+                <Route exact path="/battle" element={<Battle />}/>
+                <Route path="battle/results" element={<Results />}/>
               </Routes>
             </div>
           </div>
