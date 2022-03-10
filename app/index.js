@@ -32,17 +32,7 @@ class App extends React.Component {
         <ThemeProvider value={this.state}>
           <div className={this.state.theme}>
             <div>
-              <ul className={`flex-center ${this.state.theme}`}>
-                <li>
-                  <Link to="/" className={`btn-clear nav-link`}>Battle</Link>
-                </li>
-                <li>
-                  <Link to="/popular" className={`btn-clear nav-link`}>Popular</Link>
-                </li>
-                <li>
-                  <Nav />
-                </li>
-              </ul>
+                <Nav />
                 <Routes>
                     <Route exact path="/" element={<div className='container'><Battle /></div>} />
                     <Route exact path="/popular" element={<div className='container'><Popular /></div>}/>
