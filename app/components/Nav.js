@@ -14,12 +14,12 @@ function Nav () {
         <nav className='row space-between flex-center'>
           <ul className='row nav'>
             <li>
-              <NavLink to='/' exact style={activeStyle} className='nav-link'>
+              <NavLink to='/' exact activeClassName={activeStyle} className='nav-link'>
                   Popular
               </NavLink>
             </li>
             <li>
-              <NavLink to='/battle' style={activeStyle} className='nav-link'>
+              <NavLink to='/battle' activeClassName={activeStyle} className='nav-link'>
                   Battle
               </NavLink>
             </li>
