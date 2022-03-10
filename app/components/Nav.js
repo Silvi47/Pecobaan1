@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeConsumer  } from "../contexts/theme";
 import { Link } from "react-router-dom";
-import './index.css'
+import '../index.css'
 
 function Nav () {
     return (
