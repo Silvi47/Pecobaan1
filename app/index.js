@@ -32,9 +32,10 @@ class App extends React.Component {
           <div className={this.state.theme}>
             <div className='container'>
               <Nav />
-
-              <Route exact path='/' component={Popular} />
-              <Route path='/battle' component={Battle} />
+              <Routes>
+                <Route exact path="/" element={<Battle />} />
+                <Route exact path="/battle" element={<Popular />}/>
+              </Routes>
             </div>
           </div>
         </ThemeProvider>
