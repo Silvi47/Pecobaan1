@@ -33,8 +33,8 @@ class App extends React.Component {
             <div className='container'>
               <Nav />
               <Routes>
-                <Route exact path="/" element={<Battle />} />
-                <Route exact path="/battle" element={<Popular />}/>
+                <Route exact path="/" element={<Popular />} />
+                <Route exact path="/battle" element={<Battle />}/>
               </Routes>
             </div>
           </div>
