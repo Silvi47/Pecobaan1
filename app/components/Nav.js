@@ -11,12 +11,12 @@ function Nav () {
           <ul className='row nav'>
             <li>
               <Link to='/' className='nav-link btn-space' onClick={toggleTheme}>
-                  {theme === 'light' ? <p>Popular</p> : <p style={color: '#DADADA'}>Popular</p>}
+                  {theme === 'light' ? <div>Popular</div> : <div style={color='#DADADA'}>Popular</div>}
               </Link>
             </li>
             <li>
               <Link to='/battle' className='nav-link btn-space' onClick={toggleTheme}>
-                  {theme === 'light' ? <p>Battle</p> : <p style={color: '#DADADA'}>Battle</p>}
+                  {theme === 'light' ? <div>Battle</div> : <div style={color='#DADADA'}>Battle</div>}
               </Link>
             </li>
           </ul>
