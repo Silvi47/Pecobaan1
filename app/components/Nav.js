@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeConsumer  } from "../contexts/theme";
-import Popular from './components/Popular'
-import Battle from './components/Battle'
+import Popular from './Popular'
+import Battle from './Battle'
 import {
   BrowserRouter as Router,
   Routes,
