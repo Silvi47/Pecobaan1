@@ -9,13 +9,13 @@ function Nav () {
         <nav className='row space-between flex-center'>
           <ul className='row nav'>
             <li>
-              <Link to='/' activeStyle={activeStyle} className='nav-link btn-space'>
-                  Popular
+              <Link to='/' className='nav-link btn-space' onClick={toggleTheme}>
+                  {theme === 'light' ? <p>Popular</p> : <p style="color: #DADADA;">Battle</p>}
               </Link>
             </li>
             <li>
-              <Link to='/battle' className='nav-link btn-space'>
-                  Battle
+              <Link to='/popular' className='nav-link btn-space' onClick={toggleTheme}>
+                  {theme === 'light' ? <p>Popular</p> : <p style="color: #DADADA;">Popular</p>}
               </Link>
             </li>
           </ul>
