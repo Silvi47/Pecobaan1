@@ -17,10 +17,10 @@ function Nav () {
                 <nav className="row space-between flex-center">
                     <ul>
                         <li>
-                            <Link to="/" className={`nav-link btn-hover ${this.state.theme}`}>Popular</Link>
+                            <Link to="/" className={`btn-clear nav-link btn-hover ${this.state.theme}`}>Battle</Link>
                         </li>
                         <li>
-                            <Link to="/battle" className={`nav-link btn-hover ${this.state.theme}`}>Battle</Link>
+                            <Link to="/popular" className={`btn-clear nav-link btn-hover ${this.state.theme}`}>Popukar</Link>
                         </li>
                     </ul>
                     <button
