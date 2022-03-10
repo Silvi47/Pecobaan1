@@ -6,15 +6,15 @@ function Nav () {
     return (
         <ThemeConsumer>
       {({ theme, toggleTheme }) => (
-        <nav className='row space-between'>
+        <nav className='row space-between flex-center'>
           <ul className='row nav'>
             <li>
-              <Link to='/' className='nav-link'>
+              <Link to='/' className='nav-link btn-space'>
                   Popular
               </Link>
             </li>
             <li>
-              <Link to='/battle' className='nav-link'>
+              <Link to='/battle' className='nav-link btn-space'>
                   Battle
               </Link>
             </li>
