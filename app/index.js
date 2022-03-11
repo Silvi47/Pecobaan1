@@ -21,10 +21,9 @@ class App extends React.Component {
       }
     }
   }
-
   render() {
     return (
-        <Router>
+      <Router>
         <ThemeProvider value={this.state}>
           <div className={this.state.theme}>
             <div className='container'>
