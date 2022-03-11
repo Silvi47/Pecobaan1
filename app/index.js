@@ -33,7 +33,7 @@ class App extends React.Component {
                 <Route exact path='/' component={Popular} />
                 <Route exact path='/battle' component={Battle} />
                 <Route path='/battle/results' component={Results} />
-                <Route render={() => console.log(404)} />
+                <Route render={() => <h1><center><strong>404 | Page not found</strong></center></h1>} />
               </Switch>
             </div>
           </div>
