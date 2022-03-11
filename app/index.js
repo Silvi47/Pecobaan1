@@ -33,7 +33,7 @@ class App extends React.Component {
                 <Route exact path='/' component={Popular} />
                 <Route exact path='/battle' component={Battle} />
                 <Route path='/battle/results' component={Results} />
-                <Route render={() => <h1 className="text-center">404</h1>} />
+                <Route render={() => console.log(404)} />
               </Switch>
             </div>
           </div>
