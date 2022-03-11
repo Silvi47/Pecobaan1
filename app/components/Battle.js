@@ -151,21 +151,7 @@ export default class Battle extends React.Component {
   }
   render() {
     const { playerOne, playerTwo } = this.state
-
-    if (battle === true) {
-      return (
-        <Results
-          playerOne={playerOne}
-          playerTwo={playerTwo}
-          onReset={() => this.setState({
-            playerOne: null,
-            playerTwo: null,
-            battle: false
-          })}
-        />
-      )
-    }
-
+    
     return (
       <React.Fragment>
         <Instructions />
@@ -204,7 +190,7 @@ export default class Battle extends React.Component {
               className='btn dark-btn btn-space'
               to={{
                 pathname: '/battle/results',
-                search: `?playerOne=${playerOne}&playerTwo${playerTwo}`
+                search: `?playerOne=${playerOne}&playerTwo=${playerTwo}`
               }}
             >
               Battle
