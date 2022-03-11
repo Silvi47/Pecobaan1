@@ -76,12 +76,6 @@ export default class Results extends React.Component {
         })
       })
   }
-  componentWillUnmount() {
-    // fix Warning: Can't perform a React state update on an unmounted component
-    this.setState = (state,callback)=>{
-        return;
-    };
-  }
   render() {
     const { winner, loser, error, loading } = this.state
 
